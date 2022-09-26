@@ -1,0 +1,197 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+}
+
+.bg-main-desktop {
+  position: relative;
+  min-width: 1440px;
+  min-height: 900px;
+  display: flex;
+}
+
+.bg-main-desktop__block {
+  width: 483px;
+  height: 900px;
+  background-image: url("../images/bg-main-desktop.png");
+}
+
+.card-logo {
+  margin: 27px 33px;
+}
+
+.bg-card-front,
+.bg-card-back {
+  position: absolute;
+  width: 447px;
+  height: 245px;
+  background-image: url("../images/bg-card-front.png");
+  top: 195px;
+  left: 150px;
+}
+
+.bg-card-back {
+  background-image: url("../images/bg-card-back.png");
+  top: 479px;
+  left: 244px;
+}
+
+.bg-card-front__number {
+  display: flex;
+  justify-content: center;
+}
+
+.bg-card-front__number p {
+  margin-top: 25px;
+  margin-right: 45px;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.3rem;
+}
+
+.bg-card-front_dates {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bg-card-front__name,
+.bg-card-front__date {
+  margin: 30px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+.bg-card-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: right;
+}
+
+.bg-card-back p {
+  margin-right: 60px;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  font-size: 14px;
+  color: #fff;
+}
+
+.container-form {
+  display: flex;
+  justify-content: center;
+}
+
+::placeholder {
+  color: #C9C9C9;
+}
+
+.form-date {
+  position: relative;
+  margin-top: 120px;
+  margin-left: 400px;
+  padding: 30px;
+  width: 450px;
+  height: 500px;
+  align-self: center;
+  align-content: center;
+  border: thin solid hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+}
+
+input,
+textarea {
+  width: 380px;
+  height: 45px;
+  margin-bottom: 25px;
+}
+
+textarea {
+  vertical-align: top;
+}
+
+input {
+  padding-left: 15px;
+  font-size: 20px;
+  border-radius: 8px;
+  border: 1px solid hsl(279, 6%, 55%);
+}
+
+.date::placeholder {
+  font-size: 15px;
+}
+
+.date-MM,
+.date-YY {
+  width: 80px;
+  height: 45px;
+}
+
+.date-YY {
+  margin-left: 8px;
+}
+
+.cvc-number {
+  width: 190px;
+  height: 45px;
+}
+
+.text-form-name,
+.text-form-card-number,
+.text-form-date,
+.date,
+.text-form-cvc {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.18rem;
+  vertical-align: 0.5rem;
+}
+
+.cvc-card {
+  position: absolute;
+  right: 38px;
+  top: 220px;
+}
+
+.cvc-number_size::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 8px;
+  width: 380px;
+  height: 55px;
+  margin-top: 25px;
+  padding: 15px;
+  font-size: 16px;
+  align-items: center;
+}
+
+.btn_submit {
+  color: #fff;
+  text-align: center;
+  background-color: hsl(278, 68%, 11%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+
+}
